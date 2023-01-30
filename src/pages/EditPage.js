@@ -18,7 +18,7 @@ const EditPage = () => {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch(`/api/workouts/${id}`,
+      const response = await fetch(`https://mern-app-1j8b.onrender.com/api/workouts/${id}`,
       {headers: {
         'Authorization': `Bearer ${user.token}`
       }})
@@ -56,7 +56,7 @@ const EditPage = () => {
 
     const workout = {title, load, reps}
     
-    const update = await fetch(`/api/workouts/${id}`, {
+    const update = await fetch(`https://mern-app-1j8b.onrender.com/api/workouts/${id}`, {
       method: 'PATCH',
       body: JSON.stringify(workout),
       headers: {
