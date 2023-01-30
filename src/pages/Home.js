@@ -12,7 +12,7 @@ const Home = () => {
 
   useEffect(() => {
   const fetchWorkouts = async () => {
-    const response = await fetch('https://mern-app-1j8b.onrender.com/api/workouts', {
+    const response = await fetch('https://mern-app-oaka.onrender.com/api/workouts', {
       headers: {
         'Authorization': `Bearer ${user.token}`
       }

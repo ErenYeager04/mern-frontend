@@ -23,7 +23,7 @@ const WorkoutForm = () => {
 
     const workout = {title, load, reps}
     
-    const response = await fetch('https://mern-app-1j8b.onrender.com/api/workouts', {
+    const response = await fetch('https://mern-app-oaka.onrender.com/api/workouts', {
       method: 'POST',
       body: JSON.stringify(workout),
       headers: {
